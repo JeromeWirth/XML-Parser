@@ -1,0 +1,15 @@
+<fahrplan>
+	<bahnhof>
+		<name>Frankfurt HBF</name>
+		<ereignis>
+			<abfahrt>
+				<zeit>10.24</zeit>
+				<zugtyp class="ic">IC</zugtyp>
+				<zugnr>234</zugnr>
+				<route>Nuernberg 11.48, Regensburg 12.50, Passau 13.38, Linz 14.22
+					<ziel>Wien West an 17.55</ziel>
+				</route>
+			</abfahrt>
+		</ereignis>
+	</bahnhof>
+</fahrplan>

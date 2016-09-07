@@ -1,0 +1,175 @@
+\hypertarget{class_element}{\section{Element Class Reference}
+\label{class_element}\index{Element@{Element}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_element_ab0d0e20be9a36ae676202db753faeec9}{Element} ()
+\item 
+\hyperlink{class_element_a13d54ba9c08b6bec651402f1c2bb002c}{$\sim$\-Element} ()
+\item 
+void \hyperlink{class_element_a44b5552308fe679566a2808bed16939c}{set\-Ele\-Name} (string s)
+\item 
+void \hyperlink{class_element_a6f656e91ad5681bb60af85697a56e76d}{set\-Ele\-Value} (string s)
+\item 
+void \hyperlink{class_element_a94825e96a41b8963b7669eb65c909476}{set\-Attr\-Name} (string s)
+\item 
+void \hyperlink{class_element_a08798ba236c4e97ff28530302fa30ae7}{set\-Attr\-Value} (string s)
+\item 
+void \hyperlink{class_element_a8faeae35481b53b67fad8bef0caec094}{set\-Tier} (int i)
+\item 
+void \hyperlink{class_element_a568df8f466f6bb5e6d690a2d2036aaf5}{set\-Valid} (bool b)
+\item 
+string \hyperlink{class_element_aaabf9f1dca9b320738dead3e3843ece3}{get\-Ele\-Name} ()
+\item 
+string \hyperlink{class_element_a31fccf5792707b9c061cb94171d09d83}{get\-Ele\-Value} ()
+\item 
+bool \hyperlink{class_element_a64fb4bd661430a3ccd7e17f457d75adb}{get\-Valid} ()
+\item 
+void \hyperlink{class_element_a20b6851abb8a8bb0283ec2b0b677c5de}{print} (int t, int d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_element_ab0d0e20be9a36ae676202db753faeec9}{\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\subsubsection[{Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_element_ab0d0e20be9a36ae676202db753faeec9}
+Der Konstruktor der Elementklasse, da das \hyperlink{class_element}{Element} bei initialisierung noch kein geschlossenes Tag hat wird Valid auf false gesetzt. \hypertarget{class_element_a13d54ba9c08b6bec651402f1c2bb002c}{\index{Element@{Element}!$\sim$\-Element@{$\sim$\-Element}}
+\index{$\sim$\-Element@{$\sim$\-Element}!Element@{Element}}
+\subsubsection[{$\sim$\-Element}]{\setlength{\rightskip}{0pt plus 5cm}Element\-::$\sim$\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_element_a13d54ba9c08b6bec651402f1c2bb002c}
+Der dekonstruktor von der Klasse 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_element_aaabf9f1dca9b320738dead3e3843ece3}{\index{Element@{Element}!get\-Ele\-Name@{get\-Ele\-Name}}
+\index{get\-Ele\-Name@{get\-Ele\-Name}!Element@{Element}}
+\subsubsection[{get\-Ele\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Element\-::get\-Ele\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_element_aaabf9f1dca9b320738dead3e3843ece3}
+Gibt den Elementnamen zurück \begin{DoxyReturn}{Returns}
+Elementnamen 
+\end{DoxyReturn}
+\hypertarget{class_element_a31fccf5792707b9c061cb94171d09d83}{\index{Element@{Element}!get\-Ele\-Value@{get\-Ele\-Value}}
+\index{get\-Ele\-Value@{get\-Ele\-Value}!Element@{Element}}
+\subsubsection[{get\-Ele\-Value}]{\setlength{\rightskip}{0pt plus 5cm}string Element\-::get\-Ele\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_element_a31fccf5792707b9c061cb94171d09d83}
+Gibt den Elementwert zurück \begin{DoxyReturn}{Returns}
+Elementwert 
+\end{DoxyReturn}
+\hypertarget{class_element_a64fb4bd661430a3ccd7e17f457d75adb}{\index{Element@{Element}!get\-Valid@{get\-Valid}}
+\index{get\-Valid@{get\-Valid}!Element@{Element}}
+\subsubsection[{get\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Element\-::get\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_element_a64fb4bd661430a3ccd7e17f457d75adb}
+Gibt die Gültigkeit des Elementes zurück \begin{DoxyReturn}{Returns}
+Gültigkeit 
+\end{DoxyReturn}
+\hypertarget{class_element_a20b6851abb8a8bb0283ec2b0b677c5de}{\index{Element@{Element}!print@{print}}
+\index{print@{print}!Element@{Element}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::print (
+\begin{DoxyParamCaption}
+\item[{int}]{t, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_element_a20b6851abb8a8bb0283ec2b0b677c5de}
+Gibt das \hyperlink{class_element}{Element} auf der Konsole aus, dabei wird berücksichtigt, welche Optionen als Kommandozeilenparameter übergeben wurden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Leerzeichen, welche vor dem Tag stehen \\
+\hline
+{\em d} & Hierarchieebene, bis zu dem das Tag ausgegeben werden soll \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a94825e96a41b8963b7669eb65c909476}{\index{Element@{Element}!set\-Attr\-Name@{set\-Attr\-Name}}
+\index{set\-Attr\-Name@{set\-Attr\-Name}!Element@{Element}}
+\subsubsection[{set\-Attr\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Attr\-Name (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_element_a94825e96a41b8963b7669eb65c909476}
+Setzt den Attributnamen des Elements 
+\begin{DoxyParams}{Parameters}
+{\em s} & Attributnamen des Elements \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a08798ba236c4e97ff28530302fa30ae7}{\index{Element@{Element}!set\-Attr\-Value@{set\-Attr\-Value}}
+\index{set\-Attr\-Value@{set\-Attr\-Value}!Element@{Element}}
+\subsubsection[{set\-Attr\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Attr\-Value (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_element_a08798ba236c4e97ff28530302fa30ae7}
+Setzt den Attributwert des Elementes 
+\begin{DoxyParams}{Parameters}
+{\em s} & Attributwert des Elementes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a44b5552308fe679566a2808bed16939c}{\index{Element@{Element}!set\-Ele\-Name@{set\-Ele\-Name}}
+\index{set\-Ele\-Name@{set\-Ele\-Name}!Element@{Element}}
+\subsubsection[{set\-Ele\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Ele\-Name (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_element_a44b5552308fe679566a2808bed16939c}
+Setzt den Namen des Elementes 
+\begin{DoxyParams}{Parameters}
+{\em s} & Name des Elementes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a6f656e91ad5681bb60af85697a56e76d}{\index{Element@{Element}!set\-Ele\-Value@{set\-Ele\-Value}}
+\index{set\-Ele\-Value@{set\-Ele\-Value}!Element@{Element}}
+\subsubsection[{set\-Ele\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Ele\-Value (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_element_a6f656e91ad5681bb60af85697a56e76d}
+Setzte den Elementwert des Elementes 
+\begin{DoxyParams}{Parameters}
+{\em s} & Elementwert des Elements \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a8faeae35481b53b67fad8bef0caec094}{\index{Element@{Element}!set\-Tier@{set\-Tier}}
+\index{set\-Tier@{set\-Tier}!Element@{Element}}
+\subsubsection[{set\-Tier}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Tier (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_element_a8faeae35481b53b67fad8bef0caec094}
+Setzt die Hierarchieebene des Elementes 
+\begin{DoxyParams}{Parameters}
+{\em i} & Hierarchiebene des Elementes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a568df8f466f6bb5e6d690a2d2036aaf5}{\index{Element@{Element}!set\-Valid@{set\-Valid}}
+\index{set\-Valid@{set\-Valid}!Element@{Element}}
+\subsubsection[{set\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}void Element\-::set\-Valid (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_element_a568df8f466f6bb5e6d690a2d2036aaf5}
+Setzt das \hyperlink{class_element}{Element} auf gültig/ungültig 
+\begin{DoxyParams}{Parameters}
+{\em b} & Gültigkeit des Elementes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/element.\-hpp\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/element.\-cpp\end{DoxyCompactItemize}

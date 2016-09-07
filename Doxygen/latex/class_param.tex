@@ -1,0 +1,136 @@
+\hypertarget{class_param}{\section{Param Class Reference}
+\label{class_param}\index{Param@{Param}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_param_a1d1c108536a8e950631c36d4260b30d7}{Param} (int argc, char $\ast$$\ast$argv)
+\item 
+\hyperlink{class_param_a63814ed15af3910f8899dbd6853a7e05}{$\sim$\-Param} ()
+\item 
+void \hyperlink{class_param_a6e9ba15434d64ba536f6fa0f4527abd2}{check\-Param} ()
+\item 
+void \hyperlink{class_param_ac0583a48d72aebb4059426508b5cb2b0}{print\-Param} ()
+\item 
+string \hyperlink{class_param_aa409be665a8b7690f0320caeebdf3017}{get\-File} ()
+\item 
+int \hyperlink{class_param_afcf1130d603e2a24d429cd4b53daf98f}{get\-Depth} ()
+\item 
+int \hyperlink{class_param_a4b013439c90b8c3bfd91ad98baba0941}{get\-Tablength} ()
+\item 
+bool \hyperlink{class_param_a7794018fb89b6b7a2d7aab27208ec1be}{get\-N\-O\-A\-T\-T\-R} ()
+\item 
+bool \hyperlink{class_param_a39aff71697f7953c91d56efd2dbfcefd}{get\-N\-O\-T\-E\-X\-T} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_param_a1d1c108536a8e950631c36d4260b30d7}{\index{Param@{Param}!Param@{Param}}
+\index{Param@{Param}!Param@{Param}}
+\subsubsection[{Param}]{\setlength{\rightskip}{0pt plus 5cm}Param\-::\-Param (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{class_param_a1d1c108536a8e950631c36d4260b30d7}
+Initialisiert das Objekt mit den Werten, welche als Kommandozeilenparameter übergeben wurden und die Klassenvariablen kriegen standartwerte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Anzahl der Elemente, welche übergeben wurden \\
+\hline
+{\em argv} & Werte, welche übergeben wurden \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_param_a63814ed15af3910f8899dbd6853a7e05}{\index{Param@{Param}!$\sim$\-Param@{$\sim$\-Param}}
+\index{$\sim$\-Param@{$\sim$\-Param}!Param@{Param}}
+\subsubsection[{$\sim$\-Param}]{\setlength{\rightskip}{0pt plus 5cm}Param\-::$\sim$\-Param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_a63814ed15af3910f8899dbd6853a7e05}
+Der Dekonstruktor der Klasse 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_param_a6e9ba15434d64ba536f6fa0f4527abd2}{\index{Param@{Param}!check\-Param@{check\-Param}}
+\index{check\-Param@{check\-Param}!Param@{Param}}
+\subsubsection[{check\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Param\-::check\-Param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_a6e9ba15434d64ba536f6fa0f4527abd2}
+Überprüft die Parameter und setzte die Klassenvariablen auf die richtigen Werte.
+
+Dazu wird der Wert in argv\mbox{[}i\mbox{]} als erstes in ein String geschrieben, damit man die Funktionen für das Suchen in einem String nutzen kann, und so schneller herausfinden kann, ob eine Option angegeben wurde \hypertarget{class_param_afcf1130d603e2a24d429cd4b53daf98f}{\index{Param@{Param}!get\-Depth@{get\-Depth}}
+\index{get\-Depth@{get\-Depth}!Param@{Param}}
+\subsubsection[{get\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}int Param\-::get\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_afcf1130d603e2a24d429cd4b53daf98f}
+Gibt den Wert zurück, bis zu welcher Hierarchiebene die X\-M\-L-\/\-Elemente ausgegeben werden sollen
+
+\begin{DoxyReturn}{Returns}
+Hierarchiebene, bis zu welchen die Elemente ausgegebn werden sollen 
+\end{DoxyReturn}
+\hypertarget{class_param_aa409be665a8b7690f0320caeebdf3017}{\index{Param@{Param}!get\-File@{get\-File}}
+\index{get\-File@{get\-File}!Param@{Param}}
+\subsubsection[{get\-File}]{\setlength{\rightskip}{0pt plus 5cm}string Param\-::get\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_aa409be665a8b7690f0320caeebdf3017}
+Gibt den String zurück, welche den Wert für die xml-\/\-Datei enthält
+
+\begin{DoxyReturn}{Returns}
+Die zu öffnende .xml-\/\-Datei 
+\end{DoxyReturn}
+\hypertarget{class_param_a7794018fb89b6b7a2d7aab27208ec1be}{\index{Param@{Param}!get\-N\-O\-A\-T\-T\-R@{get\-N\-O\-A\-T\-T\-R}}
+\index{get\-N\-O\-A\-T\-T\-R@{get\-N\-O\-A\-T\-T\-R}!Param@{Param}}
+\subsubsection[{get\-N\-O\-A\-T\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}bool Param\-::get\-N\-O\-A\-T\-T\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_a7794018fb89b6b7a2d7aab27208ec1be}
+Gibt den Wert zurück, ob die Option \char`\"{}noattr\char`\"{} angegeben wurde
+
+\begin{DoxyReturn}{Returns}
+Sollen Attribute mit ausgegeben werden? 
+\end{DoxyReturn}
+\hypertarget{class_param_a39aff71697f7953c91d56efd2dbfcefd}{\index{Param@{Param}!get\-N\-O\-T\-E\-X\-T@{get\-N\-O\-T\-E\-X\-T}}
+\index{get\-N\-O\-T\-E\-X\-T@{get\-N\-O\-T\-E\-X\-T}!Param@{Param}}
+\subsubsection[{get\-N\-O\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}bool Param\-::get\-N\-O\-T\-E\-X\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_a39aff71697f7953c91d56efd2dbfcefd}
+Gibt den Wert zurück, ob die Option \char`\"{}notext\char`\"{} angegeben wurde
+
+\begin{DoxyReturn}{Returns}
+Soll Text ausgegeben werden? 
+\end{DoxyReturn}
+\hypertarget{class_param_a4b013439c90b8c3bfd91ad98baba0941}{\index{Param@{Param}!get\-Tablength@{get\-Tablength}}
+\index{get\-Tablength@{get\-Tablength}!Param@{Param}}
+\subsubsection[{get\-Tablength}]{\setlength{\rightskip}{0pt plus 5cm}int Param\-::get\-Tablength (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_a4b013439c90b8c3bfd91ad98baba0941}
+Gibt den Wert zurück, wieviele Leerzeichen vor jedem \hyperlink{class_element}{Element} stehen sollen
+
+\begin{DoxyReturn}{Returns}
+Leerzeichen, die vor einem \hyperlink{class_element}{Element} stehen sollen 
+\end{DoxyReturn}
+\hypertarget{class_param_ac0583a48d72aebb4059426508b5cb2b0}{\index{Param@{Param}!print\-Param@{print\-Param}}
+\index{print\-Param@{print\-Param}!Param@{Param}}
+\subsubsection[{print\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Param\-::print\-Param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_param_ac0583a48d72aebb4059426508b5cb2b0}
+Gibt die Kommandozeilenparameter wieder auf der Konsole aus 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/param.\-hpp\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/param.\-cpp\end{DoxyCompactItemize}

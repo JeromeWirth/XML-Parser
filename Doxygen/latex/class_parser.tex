@@ -1,0 +1,226 @@
+\hypertarget{class_parser}{\section{Parser Class Reference}
+\label{class_parser}\index{Parser@{Parser}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parser_accbcb0f4fb500eed8ef89cfc3e30b838}{Parser} (bool noattr, bool notext)
+\item 
+\hyperlink{class_parser_a3e658b5917a93a3ef648050d060e3a93}{$\sim$\-Parser} ()
+\item 
+void \hyperlink{class_parser_afb2443eab158312ff291f676fa50b56d}{process\-Input} ()
+\item 
+void \hyperlink{class_parser_a29f145268c6c19a72a91d84a5e1cc418}{set\-Input} (string input)
+\item 
+void \hyperlink{class_parser_a6fd7781b90f53c05e825bc2965b0ddfa}{normalize} ()
+\item 
+void \hyperlink{class_parser_a05d5efd804a95edb7c5cd3dae066c8ec}{process\-Start\-Tag} (string start)
+\item 
+void \hyperlink{class_parser_aa35f005614bc7315b0319a8e1ca354a9}{process\-End\-Tag} ()
+\item 
+void \hyperlink{class_parser_a54338c27e529cb1854a535b411723297}{process\-Tag\-Value} ()
+\item 
+void \hyperlink{class_parser_a2514f7227c33e82450a7dbb441ca6b27}{process\-System\-Tag} ()
+\item 
+void \hyperlink{class_parser_aaefb2b8f0af105505e5adab69697b494}{print\-Elements} (int t, int d)
+\item 
+void \hyperlink{class_parser_aa27871c49ec39f602dcd05530a523306}{set\-New\-Element} (string ele\-Name, string attr\-Name, string attr\-Value)
+\item 
+string \hyperlink{class_parser_af176dcc4603dc8639b53c15902eb0134}{get\-String} (string a, string b)
+\item 
+string \hyperlink{class_parser_a2f0f2c821e1723b4114678065eea7dac}{get\-String} (char a, char b)
+\item 
+int \hyperlink{class_parser_aca04fd991341111eca7b8321a212621b}{valid\-Elements} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_parser_accbcb0f4fb500eed8ef89cfc3e30b838}{\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser\-::\-Parser (
+\begin{DoxyParamCaption}
+\item[{bool}]{noattr = {\ttfamily false}, }
+\item[{bool}]{notext = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_parser_accbcb0f4fb500eed8ef89cfc3e30b838}
+Die Funktion erstellt einen \hyperlink{class_parser}{Parser}, die Variable \char`\"{}tier\char`\"{} wird mit 0 initialisiert um den Elementen einen richtigen Wert zuweisen zu können.
+
+
+\begin{DoxyParams}{Parameters}
+{\em noattr} & Der boolesche Wert gibt an, ob Attribute angezeigt werden sollen \\
+\hline
+{\em notext} & Der boolesche Wert gibt an, ob Text angezeigt werden soll \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_parser_a3e658b5917a93a3ef648050d060e3a93}{\index{Parser@{Parser}!$\sim$\-Parser@{$\sim$\-Parser}}
+\index{$\sim$\-Parser@{$\sim$\-Parser}!Parser@{Parser}}
+\subsubsection[{$\sim$\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser\-::$\sim$\-Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a3e658b5917a93a3ef648050d060e3a93}
+Der Dekonstruktor für die Klasse 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_parser_af176dcc4603dc8639b53c15902eb0134}{\index{Parser@{Parser}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!Parser@{Parser}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::get\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{a, }
+\item[{string}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_parser_af176dcc4603dc8639b53c15902eb0134}
+Die Klasse arbeitet mit ganzen Strings mit dieser Funktion wird der String zwischen den beiden angegeben strings aufgeteilt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Startzeichenkette, ab dem der String aufgeteilt werden soll \\
+\hline
+{\em b} & Endzeichenkette, bis wohin der String aufgeteilt werden soll \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String, welche zwischen den beiden Zeichenkette war. 
+\end{DoxyReturn}
+\hypertarget{class_parser_a2f0f2c821e1723b4114678065eea7dac}{\index{Parser@{Parser}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!Parser@{Parser}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::get\-String (
+\begin{DoxyParamCaption}
+\item[{char}]{a, }
+\item[{char}]{b}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a2f0f2c821e1723b4114678065eea7dac}
+Die Klasse arbeitet mit ganzen Strings mit dieser Funktion wird der String zwischen den beiden angegeben Chars aufgeteilt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Startzeichen, ab dem der String aufgeteilt werden soll \\
+\hline
+{\em b} & Endzeichen, bis wohin der String aufgeteilt werden soll \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String, welche zwischen den beiden Zeichen war. 
+\end{DoxyReturn}
+\hypertarget{class_parser_a6fd7781b90f53c05e825bc2965b0ddfa}{\index{Parser@{Parser}!normalize@{normalize}}
+\index{normalize@{normalize}!Parser@{Parser}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a6fd7781b90f53c05e825bc2965b0ddfa}
+Die Funktion \char`\"{}normalisiert\char`\"{} den String, das heisst, wenn der String Leerzeichen oder Tabs vor dem ersten Zeichen hat, werden die Leerzeichen/\-Tabs solange gelöscht, bis man am ersten Zeichen angekommen ist und der String weiter verarbeiten kann, oder der String leer ist, dann ist der String zuende verarbeitet. \hypertarget{class_parser_aaefb2b8f0af105505e5adab69697b494}{\index{Parser@{Parser}!print\-Elements@{print\-Elements}}
+\index{print\-Elements@{print\-Elements}!Parser@{Parser}}
+\subsubsection[{print\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::print\-Elements (
+\begin{DoxyParamCaption}
+\item[{int}]{t, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_parser_aaefb2b8f0af105505e5adab69697b494}
+Durchläuft alle Elemente vom vector und führt die print()-\/\-Funktion aus
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Wieviele Leerstellen sollen vor jedem Tag stehen \\
+\hline
+{\em d} & Bis zu welcher Hierarchieebene sollen die Tags ausgegeben werden \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_parser_aa35f005614bc7315b0319a8e1ca354a9}{\index{Parser@{Parser}!process\-End\-Tag@{process\-End\-Tag}}
+\index{process\-End\-Tag@{process\-End\-Tag}!Parser@{Parser}}
+\subsubsection[{process\-End\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::process\-End\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_aa35f005614bc7315b0319a8e1ca354a9}
+Es wurde ein schließendes Tag gefunden, und nun wird geprüft, zu welchen öffnenden Tag das Tag gehört.
+
+Da das letzte öffnende Tag als erstes geschlossen werden muss, wird die vector-\/\-List, in welchen sich die Elemente befinden, von hinten nach vorne geprüft. Wenn man dann auf ein \hyperlink{class_element}{Element} gestoßen ist, welches noch nicht Valid ist, also noch kein schliessendes Tag hat, und der Name der beiden Tags gleich ist, wird das schliessenden Tag, diesem Tag zugewiesen. \hypertarget{class_parser_afb2443eab158312ff291f676fa50b56d}{\index{Parser@{Parser}!process\-Input@{process\-Input}}
+\index{process\-Input@{process\-Input}!Parser@{Parser}}
+\subsubsection[{process\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::process\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_afb2443eab158312ff291f676fa50b56d}
+Die Funktion liest einen String solange ein, bis er die größe 0 hat. Anhand des ersten Zeichen des Strings wird entschieden, wie der String weiter verarbeitet werden soll.
+
+Sollte das erste Zeichen ein Leerzeichen oder Tab sein, so wird dieser String erstmal normalisiert und dann weiter verarbeitet. \hypertarget{class_parser_a05d5efd804a95edb7c5cd3dae066c8ec}{\index{Parser@{Parser}!process\-Start\-Tag@{process\-Start\-Tag}}
+\index{process\-Start\-Tag@{process\-Start\-Tag}!Parser@{Parser}}
+\subsubsection[{process\-Start\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::process\-Start\-Tag (
+\begin{DoxyParamCaption}
+\item[{string}]{start}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a05d5efd804a95edb7c5cd3dae066c8ec}
+Die Funktion analysiert den Starttag, wenn \hyperlink{class_parser_afb2443eab158312ff291f676fa50b56d}{process\-Input()} eine öffnende eckige Klammer gefunden hat, teilt die funktion den String auf und übermittelt den String in dem sich nur der Starttag (also alles zwischen '$<$' und '$>$') befindet, an die Funktion process\-Start\-Tag. Wenn der String fertig verarbeitet wurde, wird er von dem ursprünglichen String subtrahiert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Der String der den gesamten Starttag beinhaltet \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_parser_a2514f7227c33e82450a7dbb441ca6b27}{\index{Parser@{Parser}!process\-System\-Tag@{process\-System\-Tag}}
+\index{process\-System\-Tag@{process\-System\-Tag}!Parser@{Parser}}
+\subsubsection[{process\-System\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::process\-System\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a2514f7227c33e82450a7dbb441ca6b27}
+Die funktion analysiert den Tag auf Zeichen, welche auf Kommentare und Systemanweisungen hindeuten, dann wird der String ignoriert, oder falls erkannt wurde das es ein Syntaxfehler in dem Tag gibt, eine Fehlermeldung ausgegeben. \hypertarget{class_parser_a54338c27e529cb1854a535b411723297}{\index{Parser@{Parser}!process\-Tag\-Value@{process\-Tag\-Value}}
+\index{process\-Tag\-Value@{process\-Tag\-Value}!Parser@{Parser}}
+\subsubsection[{process\-Tag\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::process\-Tag\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a54338c27e529cb1854a535b411723297}
+Wenn ein Zeichen gefunden wurde, welches keine öffnende oder schliessende Klammer ist, wird davon ausgegangen, dass es sich um den Elementwert handel.
+
+Dazu wird geprüft, ob sich in dem String noch eine klammer befindet oder ob nur noch Text in dem string steht, nach der verarbeitung wird dieser String wieder vom ursprünglichen String abgezogen. \hypertarget{class_parser_a29f145268c6c19a72a91d84a5e1cc418}{\index{Parser@{Parser}!set\-Input@{set\-Input}}
+\index{set\-Input@{set\-Input}!Parser@{Parser}}
+\subsubsection[{set\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::set\-Input (
+\begin{DoxyParamCaption}
+\item[{string}]{input}
+\end{DoxyParamCaption}
+)}}\label{class_parser_a29f145268c6c19a72a91d84a5e1cc418}
+Der Funktion übergibt man einen String, welcher von der Klasse verarbeitet werden soll 
+\begin{DoxyParams}{Parameters}
+{\em input} & Der zu anaylsierende String \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_parser_aa27871c49ec39f602dcd05530a523306}{\index{Parser@{Parser}!set\-New\-Element@{set\-New\-Element}}
+\index{set\-New\-Element@{set\-New\-Element}!Parser@{Parser}}
+\subsubsection[{set\-New\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::set\-New\-Element (
+\begin{DoxyParamCaption}
+\item[{string}]{ele\-Name, }
+\item[{string}]{attr\-Name, }
+\item[{string}]{attr\-Value}
+\end{DoxyParamCaption}
+)}}\label{class_parser_aa27871c49ec39f602dcd05530a523306}
+Die Funktion erstellt ein neues \hyperlink{class_element}{Element} und fügt diese dann zu dem vector hinzu
+
+
+\begin{DoxyParams}{Parameters}
+{\em ele\-Name} & Der Elementnamen des Elements \\
+\hline
+{\em attr\-Name} & Der Attribut Namen des Elements \\
+\hline
+{\em attr\-Value} & Der Attribut Wert des Elements \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_parser_aca04fd991341111eca7b8321a212621b}{\index{Parser@{Parser}!valid\-Elements@{valid\-Elements}}
+\index{valid\-Elements@{valid\-Elements}!Parser@{Parser}}
+\subsubsection[{valid\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}int Parser\-::valid\-Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_parser_aca04fd991341111eca7b8321a212621b}
+Durchlauft den vector und prüft, ob die Elemente auch ein geschlossenenes Tag besitzen
+
+\begin{DoxyReturn}{Returns}
+Die anzahl, an nicht gültigen Tags. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/parser.\-hpp\item 
+F\-:/0\-Projekte/\-Progr2\-Beleg/parser.\-cpp\end{DoxyCompactItemize}
